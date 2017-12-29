@@ -1,0 +1,87 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%latex book template 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%v0.1: very basic document skeleton
+%%%%as outlined by https://en.wikibooks.org/wiki/LaTeX/Document_Structure
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%set document class + options
+%%%%%%%%(some) options available: 10,11,12pt; a4,letterpaper; notitlepage, twocolumn, oneside, openany (start chap's on any page), landscape, draft
+\documentclass[12pt]{book}  
+
+%%%%PREAMBLE!!  Here you set conditions for the entire document
+%%%%conditions....
+\setcounter{secnumdepth}{2}     %%%number sections down to x.y
+\setcounter{tocdepth}{2}	%%%%number table of contents to x.y
+
+%%%%packages....
+%\usepackage[options]{package}
+
+
+%%%%%TEXT/BODY of the document.
+\begin{document}
+%%%%%%now you're in the DOCUMENT environment
+
+%%%%%%%%'top matter' (or, front matter)
+\frontmatter
+
+\title{title}
+\author{wj}
+\date{}
+\maketitle
+
+%%%herecomes the abstract!! ...prolly not for a book.
+%%\renewcommand{\abstractname}{abstract}
+%%\begin{abstract}
+%%%abstract environment
+%%%Abstract.
+%%%\end{abstract}
+
+%%%here comes the table of contents!
+\renewcommand{\contentsname}{table of contents}
+\tableofcontents
+
+%%%here comes the list of figures!
+\renewcommand{\listfigurename}{list of figures}
+\listoffigures
+
+%%%here comes the list of tables!
+\renewcommand{\listtablename}{list of tables}
+\listoftables
+
+%%%%%here comes the body...
+
+%%%%%Preface (could copy for foreword, etc)
+\subsection*{Preface.}			%%%%asterisk = no numbering.  but that eliminates it form ToC...
+\addcontentsline{toc}{subsection}{Preface.}	%%%%but then we can add it back to ToC!!
+
+%%%%%%mainmatter! 
+%%%%%%sections:  (use *before {} to eliminate numbering)
+\mainmatter
+\part{PART}		%%%%%'sub-title page'
+
+\chapter{CHAPTER}
+Chapter content.
+
+\section{SECTION}
+Section content.
+
+\subsection{Subsection}
+Subsection content.
+
+\subsubsection{Even more subsection}
+Subsubsection content.
+
+\paragraph{Paragraph}
+Paragraph content.
+
+\subparagraph{Subparagraph}
+Subparagraph content.
+
+%%%%%appendix macro
+\appendix
+\chapter{Appendix.}
+
+\end{document}
