@@ -17,9 +17,12 @@ that will (gradually) incorporate more and more classes, options, packages.  And
 documents is no fun -- I'll try to create some one-off documents from these templates to illustrate their utility.
 
 To start, v0.1:  Following an article at https://en.wikibooks.org/wiki/LaTeX/Document_Structure, I built out very very basic templates
-for document classes (1) article (2) report (3) book.
+for document classes (1) article (2) report (3) book (4) slides (5) memoir (6) letter (7) beamer.
+Problem is:  no *.cls files were found for 'memoir' and 'beamer'.  So, v0.11 is trying to sort that out -- what's up with *.cls
+files for LaTeX???
 
-Coming soon, v0.11: Templates for (4) slides (5) memoir (6) letter (7) beamer
+v0.12:  figure out some standard aspects of document structure for non-article/report/book document classes.  ie, in lieu of abstracts,
+chapters, and sections, what goes into slides, letters, etc??
 
 What's next?
 v0.2: adding graphics and graphics paths

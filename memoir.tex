@@ -1,0 +1,62 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%latex memoir template 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%v0.1: very basic document skeleton
+%%%%as outlined by https://en.wikibooks.org/wiki/LaTeX/Document_Structure
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%set document class + options
+%%%%%%%%(some) options available: 10,11,12pt; a4,letterpaper; titlepage, twocolumn, twoside, landscape, draft
+\documentclass[12pt]{memoir}  
+
+%%%%%%%%%%%wait a minute -- investigate.  WHY is 'memoir.cls' not found'???
+
+%%%%PREAMBLE!!  Here you set conditions for the entire document
+%%%%conditions....
+\setcounter{secnumdepth}{2}		%%%%%%number sections down to x.y
+
+%%%%%Packages.....
+%\usepackage[options]{package}
+
+
+%%%%%TEXT/BODY of the document.
+\begin{document}
+%%%%%%now you're in the DOCUMENT environment
+%%%%%%%%'top matter'
+\title{title}
+\author{wj}
+\date{}
+\maketitle
+
+%%%herecomes the abstract!!
+\renewcommand{\abstractname}{abstract}
+\begin{abstract}
+%%%abstract environment
+Abstract.
+\end{abstract}
+
+%%%%%here comes the body...
+
+%%%%%%sections (not used in letters):  (use *before {} to eliminate numbering)
+%%%%\part{The First Part.}    %%%%likely not used in an article; no page break to go with \part{}
+
+\section{SECTION}	%%%no chapter in articles
+Section content.
+
+\subsection{Subsection}
+Subsection content.
+
+\subsubsection{Even more subsection}
+Subsubsection content.
+
+\paragraph{Paragraph}
+Paragraph content.
+
+\subparagraph{Subparagraph}
+Subparagraph content.
+
+
+\end{document}
