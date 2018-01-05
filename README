@@ -3,10 +3,10 @@
 *********LaTeX document templates
 *********Illustrating basic document structure + options
 **************************************************************************
-*********v0.1
+*********v0.11
 *********wj107
-*********Chicago
-*********28 Decenmber 2017
+*********Phoenix
+*********4 January 2018
 **************************************************************************
 **************************************************************************
 
@@ -18,8 +18,11 @@ documents is no fun -- I'll try to create some one-off documents from these temp
 
 To start, v0.1:  Following an article at https://en.wikibooks.org/wiki/LaTeX/Document_Structure, I built out very very basic templates
 for document classes (1) article (2) report (3) book (4) slides (5) memoir (6) letter (7) beamer.
-Problem is:  no *.cls files were found for 'memoir' and 'beamer'.  So, v0.11 is trying to sort that out -- what's up with *.cls
-files for LaTeX???
+In order to typeset 'memoir' and 'beamer' documents, we need to install the *.cls files.  That is accomplished by using "tlmgr", the
+latex package manager.  However, the debian package "xzdec" needs to be installed prior to using tlmgr -- so after installing that,
+I installed 'memoir' package, then completed the skeleton document for memoir.
+I followed suit with the 'beamer' package, including the dependencies "etoolbox" and "pgfcore", ***internet time-out, couldn't figure out
+the 'beamer' package.  I'll try again once I'm home.
 
 v0.12:  figure out some standard aspects of document structure for non-article/report/book document classes.  ie, in lieu of abstracts,
 chapters, and sections, what goes into slides, letters, etc??

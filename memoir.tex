@@ -13,6 +13,7 @@
 \documentclass[12pt]{memoir}  
 
 %%%%%%%%%%%wait a minute -- investigate.  WHY is 'memoir.cls' not found'???
+%%%%%%%PROBLEM SOLVED!!!  Use "tlmgr" to install memoir.  Need "xzdec" pacakge to run tlmgr.
 
 %%%%PREAMBLE!!  Here you set conditions for the entire document
 %%%%conditions....
@@ -26,9 +27,9 @@
 \begin{document}
 %%%%%%now you're in the DOCUMENT environment
 %%%%%%%%'top matter'
-\title{title}
-\author{wj}
-\date{}
+\title{Memoir Template}
+\author{WJ107}
+\date{4 January 2018}
 \maketitle
 
 %%%herecomes the abstract!!
@@ -40,10 +41,13 @@ Abstract.
 
 %%%%%here comes the body...
 
-%%%%%%sections (not used in letters):  (use *before {} to eliminate numbering)
-%%%%\part{The First Part.}    %%%%likely not used in an article; no page break to go with \part{}
+%%%%%%sections:  (use * to eliminate numbering)
+\part{The First Part.}   
 
-\section{SECTION}	%%%no chapter in articles
+\chapter{Chapter}
+Chapter content.
+
+\section{SECTION}
 Section content.
 
 \subsection{Subsection}
