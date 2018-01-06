@@ -5,12 +5,12 @@
 **************************************************************************
 *********v0.11
 *********wj107
-*********Phoenix
-*********4 January 2018
+*********Chicago
+*********6 January 2018
 **************************************************************************
 **************************************************************************
 
-There's a lot to learn about LaTeX!  I'm just recycling old document templates I have from decade+ ago.
+There's a lot to learn about LaTeX!  I'm not learning it by just recycling old document templates I have from decade+ ago.
 
 I want to learn document classes, packages+options, lots of fine-tuning.  So, I'm working to build up templates
 that will (gradually) incorporate more and more classes, options, packages.  And, of course, a host of 'skeleton'
@@ -21,8 +21,9 @@ for document classes (1) article (2) report (3) book (4) slides (5) memoir (6) l
 In order to typeset 'memoir' and 'beamer' documents, we need to install the *.cls files.  That is accomplished by using "tlmgr", the
 latex package manager.  However, the debian package "xzdec" needs to be installed prior to using tlmgr -- so after installing that,
 I installed 'memoir' package, then completed the skeleton document for memoir.
-I followed suit with the 'beamer' package, including the dependencies "etoolbox" and "pgfcore", ***internet time-out, couldn't figure out
-the 'beamer' package.  I'll try again once I'm home.
+
+I followed suit with the 'beamer' package, including the dependencies "etoolbox" and "ms", "xcolor", "translator", ....  Got the skeleton
+documents working!!
 
 v0.12:  figure out some standard aspects of document structure for non-article/report/book document classes.  ie, in lieu of abstracts,
 chapters, and sections, what goes into slides, letters, etc??
